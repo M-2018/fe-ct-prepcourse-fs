@@ -103,7 +103,7 @@ Deberás ejecutar estos comandos:
 git add .
 // Este comando te permitirá guardar tus cambios en Git.
 
-git commmit -m "tuMensaje"
+git commit -m "tuMensaje"
 // Este comando te permitirá darle un título a tus cambios.
 
 git push
