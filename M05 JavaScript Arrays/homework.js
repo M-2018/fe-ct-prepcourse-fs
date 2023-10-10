@@ -33,14 +33,16 @@ function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
-   return array.push(elemento);
+   array.push(elemento);
+   return array;
 }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
    // Agrega el "elemento" al comienzo del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
-   return array.unshift(elemento);
+   array.unshift(elemento);
+   return array
 }
 
 function dePalabrasAFrase(palabras) {
@@ -256,7 +258,8 @@ function breakStatement(num) {
         return "Se interrumpió la ejecución";
     }else{
         return newArray;
-    }    
+    }
+        
 }
 
 function continueStatement(num) {
@@ -268,17 +271,18 @@ function continueStatement(num) {
    // Tu código:
    const resultados = [];
 
+    return resultados;
     for (let i = 0; i < 10; i++) {
         num += 2;
-        resultados.push(num);
-
+    
         if(i === 5){
-         continue;
+            continue;
         }
-
+    
+        resultados.push(num);
     }
 
-    return resultados;
+
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
