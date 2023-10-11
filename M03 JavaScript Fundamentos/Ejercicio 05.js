@@ -35,13 +35,13 @@ function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
-   return "Hola" +  " " + nombre;
+   return `Hola ${nombre}!`;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
    // Retornar el área de un rectángulo teniendo su altura y ancho.
    // Tu código:
-   return alto + ancho;
+   return alto * ancho;
 }
 
 function retornarPerimetro(lado) {
