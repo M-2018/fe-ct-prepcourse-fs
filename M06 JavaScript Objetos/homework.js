@@ -79,7 +79,7 @@ function tieneEmail(objetoUsuario) {
    // Verifica si el "objetoUsuario", en su propiedad "email", posee un valor definido.
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
-   return objetoUsuario && objetoUsuario.email !== undefined;
+   return objetoUsuario && objetoUsuario.email !== undefined && objetoUsuario.email !== null;
 }
 
 function tienePropiedad(objeto, propiedad) {
@@ -124,6 +124,7 @@ function pasarUsuarioAPremium(objetoMuchosUsuarios) {
       // Establece la propiedad "esPremium" como true para cada usuario
       objetoMuchosUsuarios[i].esPremium = true;
    }
+   return objetoMuchosUsuarios;
 }
 
 function sumarLikesDeUsuario(objetoUsuario) {
@@ -164,7 +165,7 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
          return 'Error: Propiedades de producto inválidas';
       }
    };
-   return objetoProducto.calcularPrecioDescuento();
+   return objetoProducto;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
